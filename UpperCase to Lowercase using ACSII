@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner s=new Scanner(System.in);
+        /*String s="hello World";
+        System.out.println("length:"+s.length());
+        System.out.println("uppercase:"+s.toUpperCase()); 
+        System.out.println("Lowercase:"+s.toLowerCase()); 
+        System.out.println("Concate:"+ s.concat("Vinu")); 
+        System.out.println("comapare:"+s.equals("hello World"));*/
+        
+
+        char ch = s.next().charAt(0);
+
+        char result = (ch >= 'A' && ch <= 'Z') ? (char)(ch + 32) : ch;
+
+        System.out.println("LowerCase: "+result);
+    
+        
+    }
+}
