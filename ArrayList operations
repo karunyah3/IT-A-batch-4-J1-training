@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+
+class Main {
+    public static void main (String[] args) {
+        
+      	// Creating an ArrayList
+      	ArrayList<Object> a = new ArrayList<>();
+      	
+      	
+      	// Adding Element in ArrayList
+      	a.add("A");
+      	a.add("1"1;
+      	a.add("true");
+      //	b.clone();
+      	// Remove Element in ArrayList
+      	a.remove(1);
+      	a.add(1,"FTY");
+      	a.add(0,"ALL");
+      	a.set(0,"NILL");
+      	//a.clear(); //return empty square bracket
+
+      
+        
+      	// Printing ArrayList
+      	System.out.println(a);
+      	System.out.println(a.contains("A"));
+      	
+      	//ArrayList<object> b = ( ArrayList<object>) a.clone();
+      	//System.out.println(b); // clone means copy a to b in a list
+      	
+}
+}
