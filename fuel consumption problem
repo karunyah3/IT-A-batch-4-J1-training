@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double liters = sc.nextDouble();
+
+        if (liters <= 0) {
+            System.out.printf("%.0f is an Invalid Input", liters);
+            return;
+        }
+
+        double distance = sc.nextDouble();
+
+        if (distance <= 0) {
+            System.out.printf("%.0f is an Invalid Input", distance);
+            return;
+        }
+
+        // Liters per 100 KM
+        double litersPer100Km = (liters / distance) * 100;
+
+        // Convert KM to Miles and Liters to Gallons
+        double miles = distance * 0.6214;
+        double gallons = liters * 0.2642;
+
+        // Miles per Gallon
+        double milesPerGallon = miles / gallons;
+
+        System.out.printf("%.2f\n", litersPer100Km);
+        System.out.printf("%.2f\n", milesPerGallon);
+    }
+}
