@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter string:");
+        String s=sc.next();
+        
+        
+        char a[]=s  .toCharArray();
+        
+        for (int i=0;i<s.length();i++){
+            if(( a[i]>='a'&&a[i]<='z')&&!(a[i]>='0'&&a[i]<='9') && !(a[i]>='A'&&a[i]<='Z') &&(a[i]>=0&& a[i]<=9)){
+            continue;
+        } else {
+            System.out.println(a[i]);
+        
+        }
+        }
+    }
+}
