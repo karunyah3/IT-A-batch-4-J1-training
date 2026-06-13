@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	   double n = 25.34;
+	    
+	        System.out.println((int)n);
+	        System.out.println(Math.ceil(n));
+	        System.out.println(Math.floor(n));
+	        System.out.println(Math.abs(n));
+	        System.out.println(Math.sqrt(n));
+	        System.out.println(Math.round(n));
+	    }
+		
+	}
