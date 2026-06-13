@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two strings:");
+        String s1=sc.next();
+        String s2=sc.next();
+        
+        char a[]=s1.toCharArray();
+        char b[]=s2.toCharArray();
+        
+        Arrays.sort(a);
+        Arrays.sort(b);
+        
+        if(Arrays.equals(a,b)){
+        
+        
+            System.out.println("its anagram");
+        }
+        else{
+            System.out.println("Not an anagram");
+        }
+        
+        
+    }
+}
