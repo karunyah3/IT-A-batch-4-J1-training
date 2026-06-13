@@ -1,0 +1,81 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int grandTotal = 0;
+        char more = 'y';
+
+        System.out.println("===== FOOD DELIVERY APP =====");
+
+        while(more == 'y' || more == 'Y') {
+
+            System.out.println("\nMENU");
+            System.out.println("1. Veg Briyani      - Rs 60");
+            System.out.println("2. Mutton Briyani   - Rs 120");
+            System.out.println("3. Chicken Briyani  - Rs 80");
+            System.out.println("4. Beef Briyani     - Rs 130");
+            System.out.println("5. Plain Dosa       - Rs 40");
+            System.out.println("6. Butter Dosa      - Rs 60");
+            System.out.println("7. Rava Dosa        - Rs 70");
+            System.out.println("8. Special Dosa     - Rs 90");
+            System.out.println("9. Veg Pizza        - Rs 120");
+            System.out.println("10. Chicken Pizza   - Rs 180");
+            System.out.println("11. Mushroom Pizza  - Rs 150");
+            System.out.println("12. Paneer Pizza    - Rs 160");
+            System.out.println("13. Apple Juice     - Rs 50");
+            System.out.println("14. Mango Juice     - Rs 60");
+            System.out.println("15. Grapes Juice    - Rs 55");
+
+            System.out.print("\nEnter Item Number: ");
+            int choice = sc.nextInt();
+
+            int price = 0;
+            String item = "";
+
+            switch(choice) {
+
+                case 1: item="Veg Briyani"; price=60; break;
+                case 2: item="Mutton Briyani"; price=120; break;
+                case 3: item="Chicken Briyani"; price=80; break;
+                case 4: item="Beef Briyani"; price=130; break;
+
+                case 5: item="Plain Dosa"; price=40; break;
+                case 6: item="Butter Dosa"; price=60; break;
+                case 7: item="Rava Dosa"; price=70; break;
+                case 8: item="Special Dosa"; price=90; break;
+
+                case 9: item="Veg Pizza"; price=120; break;
+                case 10: item="Chicken Pizza"; price=180; break;
+                case 11: item="Mushroom Pizza"; price=150; break;
+                case 12: item="Paneer Pizza"; price=160; break;
+
+                case 13: item="Apple Juice"; price=50; break;
+                case 14: item="Mango Juice"; price=60; break;
+                case 15: item="Grapes Juice"; price=55; break;
+
+                default:
+                    System.out.println("Invalid Item");
+                    continue;
+            }
+
+            System.out.print("Enter Quantity: ");
+            int qty = sc.nextInt();
+
+            int total = price * qty;
+
+            System.out.println(item + " x " + qty + " = Rs " + total);
+
+            grandTotal += total;
+
+            System.out.print("Add More Items? (Y/N): ");
+            more = sc.next().charAt(0);
+        }
+
+        System.out.println("\n===== FINAL BILL =====");
+        System.out.println("Total Amount = Rs " + grandTotal);
+        System.out.println("Thank You! Visit Again.");
+    }
+}
