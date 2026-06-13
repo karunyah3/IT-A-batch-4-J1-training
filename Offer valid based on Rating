@@ -1,0 +1,68 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter elements:");
+
+
+        int n1 = s.nextInt();
+        int n2 = s.nextInt();
+        int n3 = s.nextInt();
+        int n4 = s.nextInt();
+        int n5 = s.nextInt();
+        int avg;
+
+        if(n1 > 0 && n1 <= 5) {
+
+            if(n2 > 0 && n2 <= 5) {
+
+                if(n3 > 0 && n3 <= 5) {
+
+                    if(n4 > 0 && n4 <= 5) {
+
+                        if(n5 > 0 && n5 <= 5) {
+
+                            avg = (n1 + n2 + n3 + n4 + n5) / 5;
+                            
+                               System.out.println("Avg:"+avg);
+                            if(avg > 3.5) {
+                                
+                                System.out.println("Offer valid for you");
+                            }
+                            else {
+                                System.out.println("NO Offer for you");
+                            }
+
+                        }
+                        else {
+                            System.out.println("Invalid");
+                            System.out.println("Please enter the correct rating for order 5:");
+                        }
+
+                    }
+                    else {
+                        System.out.println("Invalid");
+                         System.out.println("Please enter the correct rating for order 4:");
+                    }
+
+                }
+                else {
+                    System.out.println("Invalid");
+                     System.out.println("Please enter the correct rating for order 3:");
+                }
+
+            }
+            else {
+                System.out.println("Invalid");
+                 System.out.println("Please enter the correct rating for order 2:");
+            }
+
+        }
+        else {
+            System.out.println("Invalid");
+             System.out.println("Please enter the correct rating for order 1:");
+        }
+    }
+}
